@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env               
+.env.local
+.env.development
+.env.production
+
+# Build directories
+dist
+dist-ssr
+.cache
+.temp
+
+# Dependencies
+node_modules
+
+# Editor files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Testing
+coverage
+.nyc_output
+
+# Debug
+debug.log
