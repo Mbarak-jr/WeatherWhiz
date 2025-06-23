@@ -1,17 +1,16 @@
 /**
  * Weather API Service for OpenWeatherMap
- * API Key: ace452e7dcbb423b4b03ff7aa6cb0faf
  * Documentation: https://openweathermap.org/current
  */
 
-const API_KEY = 'ace452e7dcbb423b4b03ff7aa6cb0faf';
+// ✅ Use environment variable for API key
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 /**
  * Fetches current weather data for a city
  * @param {string} city - City name to search for
  * @returns {Promise<Object>} - Formatted weather data
- * @throws {Error} - When city not found or API request fails
  */
 export async function fetchWeather(city) {
   try {
@@ -40,9 +39,9 @@ export async function fetchWeather(city) {
 }
 
 /**
- * Transforms raw API data into our application format
- * @param {Object} data - Raw API response
- * @returns {Object} - Formatted weather data
+ * Transforms raw API response into a usable format
+ * @param {Object} data - Raw API response from OpenWeather
+ * @returns {Object} - Transformed data
  */
 function transformWeatherData(data) {
   return {
@@ -51,10 +50,10 @@ function transformWeatherData(data) {
     temp: Math.round(data.main.temp),
     feelsLike: Math.round(data.main.feels_like),
     humidity: data.main.humidity,
-    windSpeed: Math.round(data.wind.speed * 3.6), // Convert m/s to km/h
+    windSpeed: Math.round(data.wind.speed * 3.6), // m/s to km/h
     windDeg: data.wind.deg,
     pressure: data.main.pressure,
-    visibility: data.visibility / 1000, // Convert meters to km
+    visibility: data.visibility / 1000, // meters to km
     condition: data.weather[0].main,
     description: data.weather[0].description,
     icon: data.weather[0].icon,
@@ -66,9 +65,9 @@ function transformWeatherData(data) {
 }
 
 /**
- * Fetches 5-day weather forecast
- * @param {Object} coord - { lat, lon } coordinates
- * @returns {Promise<Array>} - Array of forecast data
+ * Fetches 5-day weather forecast data by coordinates
+ * @param {Object} coord - { lat, lon }
+ * @returns {Promise<Array>} - List of forecast entries
  */
 export async function fetchForecast(coord) {
   try {
@@ -92,6 +91,6 @@ export async function fetchForecast(coord) {
     }));
   } catch (error) {
     console.error('Forecast API Error:', error);
-    throw new Error('Failed to load forecast data');
+    throw new Error('Failed to load forecast data.');
   }
 }
