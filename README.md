@@ -1,6 +1,6 @@
 # 🌦️ WeatherWhiz - Progressive Weather App
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/weatherwhiz&env=VITE_WEATHER_API_KEY&project-name=weatherwhiz&repository-name=weatherwhiz)
 
 ## ✨ Features
 - Real-time weather forecasts
