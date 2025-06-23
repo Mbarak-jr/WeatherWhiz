@@ -1,5 +1,7 @@
 # 🌦️ WeatherWhiz - Progressive Weather App
 
+🔗 **Live Demo:** [https://weather-whiz-mu.vercel.app](https://weather-whiz-mu.vercel.app)
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/weatherwhiz&env=VITE_WEATHER_API_KEY&project-name=weatherwhiz&repository-name=weatherwhiz)
 
 ## ✨ Features
@@ -44,9 +46,9 @@ This app uses OpenWeatherMap API. Get your free API key at [openweathermap.org](
 ![Mobile View](/screenshots/mobile.png)
 
 ## 🌟 Why WeatherWhiz?
-- Lightning fast ⚡
-- Beautiful animations ✨
-- Accurate forecasts 📊
+- Lightning fast ⚡  
+- Beautiful animations ✨  
+- Accurate forecasts 📊  
 - User-friendly interface 💖
 
 ## 📜 License
