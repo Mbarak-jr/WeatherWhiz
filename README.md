@@ -48,10 +48,6 @@ Here’s how the WeatherWhiz app looks in action:
 ## 📊 API Usage
 This app uses OpenWeatherMap API. Get your free API key at [openweathermap.org](https://openweathermap.org/api)
 
-## 📱 Screenshots
-![App Screenshot](/screenshots/main.png)
-![Mobile View](/screenshots/mobile.png)
-
 ## 🌟 Why WeatherWhiz?
 - Lightning fast ⚡  
 - Beautiful animations ✨  
