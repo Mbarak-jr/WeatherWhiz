@@ -1,5 +1,12 @@
 # 🌦️ WeatherWhiz - Progressive Weather App
 
+## 📱 Screenshot
+
+Here’s how the WeatherWhiz app looks in action:
+
+![WeatherWhiz Screenshot](public/screenshots/screenshot.png)
+
+
 🔗 **Live Demo:** [https://weather-whiz-mu.vercel.app](https://weather-whiz-mu.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/weatherwhiz&env=VITE_WEATHER_API_KEY&project-name=weatherwhiz&repository-name=weatherwhiz)
